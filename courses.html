@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours - DATA QUEST</title>
+    <link rel="stylesheet" href="home-style.css">
+    <link rel="stylesheet" href="courses-style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="courses-header">
+        <div class="header-content">
+            <a href="home.html" class="back-button">← Retour</a>
+            <h1 class="main-title">COURS MERISE & SQL</h1>
+            <p class="subtitle">Maîtrisez les bases de données</p>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="courses-main">
+        <div class="container">
+            <!-- Video Section -->
+        <h2>🎥 Vidéo explicative du cours</h2>
+
+<iframe
+  width="100%"
+  height="400"
+  src="https://www.youtube.com/embed/mfbTF_Cu0Ss"
+  title="Cours Base de Données - MERISE et SQL"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+
+
+            </section>
+
+            <!-- Course Content -->
+            <section class="course-details">
+                <!-- Table of Contents -->
+                <div class="toc-section">
+                    <h2>📖 Table des matières</h2>
+                    <nav class="toc-nav">
+                        <ul>
+                            <li><a href="#module1">1. Introduction</a></li>
+                            <li><a href="#module2">2. Exemple Réel : Les Igoudars</a></li>
+                            <li><a href="#module3">3. MERISE - Méthode de Modélisation</a></li>
+                            <li><a href="#module4">4. MCD - Modèle Conceptuel</a></li>
+                            <li><a href="#module5">5. MLD - Modèle Logique & SQL</a></li>
+                            <li><a href="#module6">6. Lien entre MERISE et SQL</a></li>
+                            <li><a href="#module7">7. Conclusion</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Module 1 -->
+                <div id="module1" class="module">
+                    <div class="module-header">
+                        <h2>📘 Cours : Base de Données – MERISE et SQL</h2>
+                        <span class="module-level">Fondamentaux</span>
+                    </div>
+                    <div class="module-content">
+                        <h3>🔰 Introduction</h3>
+                        <p>Une base de données est un ensemble structuré de données permettant de stocker, organiser et exploiter des informations de manière efficace.</p>
+                        <p>Avant même l'apparition de l'informatique, l'être humain utilisait déjà des méthodes d'organisation des données dans la vie quotidienne.</p>
+                    </div>
+                </div>
+
+                <!-- Module 2 -->
+                <div id="module2" class="module">
+                    <div class="module-header">
+                        <h2>🏛️ Exemple Réel : Les Igoudars du Souss Massa</h2>
+                        <span class="module-level">Fondamentaux</span>
+                    </div>
+                    <div class="module-content">
+                        <p>Les Igoudars sont des greniers collectifs traditionnels utilisés pour stocker des biens (céréales, huile, documents…).</p>
+                        <p><strong>Chaque Igouda possède :</strong></p>
+                        <ul class="content-list">
+                            <li>des cases (appartenant à des familles)</li>
+                            <li>des gardiens responsables de la sécurité</li>
+                        </ul>
+                        <p><strong>👉 Cette organisation correspond parfaitement aux principes des bases de données relationnelles.</strong></p>
+                    </div>
+                </div>
+
+                <!-- Module 3 -->
+                <div id="module3" class="module">
+                    <div class="module-header">
+                        <h2>🧠 MERISE - Méthode de Modélisation</h2>
+                        <span class="module-level">Débutant</span>
+                    </div>
+                    <div class="module-content">
+                        <h3>🔹 Qu'est-ce que MERISE ?</h3>
+                        <p>MERISE est une méthode de modélisation utilisée pour concevoir des bases de données de manière structurée et logique.</p>
+                        
+                        <p><strong>Elle repose sur plusieurs modèles, dont les plus importants sont :</strong></p>
+                        <ul class="content-list">
+                            <li><strong>📐 MCD – Modèle Conceptuel de Données</strong> : Représenter les données sans se soucier de l'informatique</li>
+                            <li><strong>🧩 MLD – Modèle Logique de Données</strong> : Transformer le MCD en tables relationnelles</li>
+                            <li><strong>🗄️ SQL – Langage de manipulation des données</strong> : Interagir avec la base de données</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Module 4 -->
+                <div id="module4" class="module">
+                    <div class="module-header">
+                        <h2>📐 MCD – Modèle Conceptuel de Données</h2>
+                        <span class="module-level">Intermédiaire</span>
+                    </div>
+                    <div class="module-content">
+                        <p>Le MCD permet de représenter les données sans se soucier de l'informatique.</p>
+                        
+                        <h4>🔸 Entités</h4>
+                        <ul class="content-list">
+                            <li><strong>IGOUDA</strong> : Grenier collectif</li>
+                            <li><strong>CASE</strong> : Compartiment de rangement</li>
+                            <li><strong>TENTENA</strong> : Gardien du grenier</li>
+                        </ul>
+
+                        <h4>🔸 Relations</h4>
+                        <ul class="content-list">
+                            <li>Un Igouda contient plusieurs Cases</li>
+                            <li>Un Igouda est géré par une ou plusieurs Tentenas (gardiens)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Module 5 -->
+                <div id="module5" class="module">
+                    <div class="module-header">
+                        <h2>🧩 MLD – Modèle Logique & Implémentation SQL</h2>
+                        <span class="module-level">Intermédiaire</span>
+                    </div>
+                    <div class="module-content">
+                        <p>Le MLD transforme le MCD en tables relationnelles.</p>
+                        
+                        <h4>📋 Tables obtenues :</h4>
+
+                        <h5>🟫 Table IGOUDA</h5>
+                        <p style="color: rgba(0, 240, 255, 0.7); font-style: italic; margin-bottom: 0.8rem;">Contient les informations des greniers collectifs</p>
+                        <div class="table-wrapper">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Champ</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>id_igouda</td>
+                                        <td>Identifiant unique de l'Igouda</td>
+                                    </tr>
+                                    <tr>
+                                        <td>nom_igouda</td>
+                                        <td>Nom du grenier</td>
+                                    </tr>
+                                    <tr>
+                                        <td>localisation</td>
+                                        <td>Localisation géographique</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p style="color: var(--neon-green); font-weight: 700; margin: 1rem 0;">🔑 Clé primaire : id_igouda</p>
+
+                        <h5>🟨 Table CASE</h5>
+                        <p style="color: rgba(0, 240, 255, 0.7); font-style: italic; margin-bottom: 0.8rem;">Contient les informations des cases (compartiments) de rangement</p>
+                        <div class="table-wrapper">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Champ</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>id_case</td>
+                                        <td>Identifiant unique de la case</td>
+                                    </tr>
+                                    <tr>
+                                        <td>id_igouda</td>
+                                        <td>Référence à l'Igouda auquel appartient la case</td>
+                                    </tr>
+                                    <tr>
+                                        <td>attributs</td>
+                                        <td>Description du contenu de la case</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p style="color: var(--neon-green); font-weight: 700; margin: 0.5rem 0;">🔑 Clé primaire : id_case</p>
+                        <p style="color: var(--neon-pink); font-weight: 700; margin: 0.5rem 0;">🔗 Clé étrangère : id_igouda</p>
+
+                        <h5>🟦 Table TENTENA</h5>
+                        <p style="color: rgba(0, 240, 255, 0.7); font-style: italic; margin-bottom: 0.8rem;">Contient les informations des gardiens responsables des Igoudars</p>
+                        <div class="table-wrapper">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Champ</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>id_tentena</td>
+                                        <td>Identifiant unique du gardien</td>
+                                    </tr>
+                                    <tr>
+                                        <td>id_igouda</td>
+                                        <td>Référence à l'Igouda surveillé</td>
+                                    </tr>
+                                    <tr>
+                                        <td>rôle</td>
+                                        <td>Rôle et responsabilités du gardien</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p style="color: var(--neon-green); font-weight: 700; margin: 0.5rem 0;">🔑 Clé primaire : id_tentena</p>
+                        <p style="color: var(--neon-pink); font-weight: 700; margin: 0.5rem 0;">🔗 Clé étrangère : id_igouda</p>
+                    </div>
+                </div>
+
+                <!-- Module 6 -->
+                <div id="module6" class="module">
+                    <div class="module-header">
+                        <h2>🗄️ SQL – Langage de Manipulation des Données</h2>
+                        <span class="module-level">Intermédiaire</span>
+                    </div>
+                    <div class="module-content">
+                        <p>SQL est un langage utilisé pour interagir avec la base de données.</p>
+
+                        <h4>🔹 SELECT</h4>
+                        <p>Permet d'afficher les données :</p>
+                        <div class="code-block">
+                            <code>SELECT * FROM IGOUDA;</code>
+                        </div>
+
+                        <h4>🔹 INSERT</h4>
+                        <p>Permet d'ajouter des données :</p>
+                        <div class="code-block">
+                            <code>INSERT INTO CASE (id_case, id_igouda, attributs)<br>VALUES (1006, 2, 'Céréales');</code>
+                        </div>
+
+                        <h4>🔹 UPDATE</h4>
+                        <p>Permet de modifier des données :</p>
+                        <div class="code-block">
+                            <code>UPDATE TENTENA<br>SET rôle = 'Gardien principal'<br>WHERE id_tentena = 2001;</code>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Module 7 -->
+                <div id="module7" class="module">
+                    <div class="module-header">
+                        <h2>🔄 Lien entre MERISE et SQL</h2>
+                        <span class="module-level">Avancé</span>
+                    </div>
+                    <div class="module-content">
+                        <ul class="content-list">
+                            <li><strong>MERISE</strong> sert à concevoir et structurer la base de données</li>
+                            <li><strong>SQL</strong> sert à exploiter et manipuler les données</li>
+                            <li>Les deux sont complémentaires dans tout projet de base de données</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Summary Section -->
+                <div class="summary-section">
+                    <h2>🏁 Conclusion</h2>
+                    <div class="summary-content">
+                        <p>L'exemple des Igoudars montre que les principes fondamentaux des bases de données existaient déjà avant l'informatique.</p>
+                        <p>Grâce à MERISE et SQL, ces principes sont aujourd'hui formalisés et utilisés dans les systèmes informatiques modernes.</p>
+                    </div>
+                    
+                    <div class="summary-grid">
+                        <div class="summary-card">
+                            <div class="summary-icon">📘</div>
+                            <h4>Concepts Clés</h4>
+                            <p>Base de données, organisation de données</p>
+                        </div>
+                        <div class="summary-card">
+                            <div class="summary-icon">🏛️</div>
+                            <h4>Exemple Pratique</h4>
+                            <p>Les Igoudars comme modèle réel</p>
+                        </div>
+                        <div class="summary-card">
+                            <div class="summary-icon">🧠</div>
+                            <h4>Modélisation</h4>
+                            <p>Méthode MERISE structurée</p>
+                        </div>
+                        <div class="summary-card">
+                            <div class="summary-icon">📐</div>
+                            <h4>Design (MCD)</h4>
+                            <p>Entités et relations</p>
+                        </div>
+                        <div class="summary-card">
+                            <div class="summary-icon">🧩</div>
+                            <h4>Implémentation (MLD)</h4>
+                            <p>Tables relationnelles</p>
+                        </div>
+                        <div class="summary-card">
+                            <div class="summary-icon">🗄️</div>
+                            <h4>Manipulation</h4>
+                            <p>Langage SQL</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="cta-section">
+                    <h2>Prêt à tester vos connaissances ?</h2>
+                    <p>Vous avez parcouru tous les modules du cours. Passez maintenant au QCM pour évaluer votre compréhension.</p>
+                    <a href="qcm.html" class="btn btn-qcm">
+                        → Accéder au QCM
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="home-footer">
+        <p>&copy; 2026 LST SITD - COURS MERISE & SQL</p>
+    </footer>
+
+    <script src="courses-script.js"></script>
+</body>
+</html>
